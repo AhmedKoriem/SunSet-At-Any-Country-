@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SunSetApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="da5al esm el madina" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ras-Zd-C6Y">
+                                <rect key="frame" x="16" y="99" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMU-m5-lix">
+                                <rect key="frame" x="16" y="360" width="343" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8x-pf-G8p">
+                                <rect key="frame" x="274" y="184" width="78" height="30"/>
+                                <state key="normal" title="Get SunSet"/>
+                                <connections>
+                                    <action selector="BuGetSunSet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ba1-xZ-Rsz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ras-Zd-C6Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="27T-DL-yHH"/>
+                            <constraint firstItem="ras-Zd-C6Y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="35u-3d-fHM"/>
+                            <constraint firstItem="FMU-m5-lix" firstAttribute="trailing" secondItem="ras-Zd-C6Y" secondAttribute="trailing" id="9nK-Yw-eTZ"/>
+                            <constraint firstItem="FMU-m5-lix" firstAttribute="top" secondItem="e8x-pf-G8p" secondAttribute="bottom" constant="146" id="SaO-UR-L1R"/>
+                            <constraint firstItem="e8x-pf-G8p" firstAttribute="top" secondItem="ras-Zd-C6Y" secondAttribute="bottom" constant="55" id="XCw-uo-5cg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e8x-pf-G8p" secondAttribute="trailing" constant="23" id="YO7-En-0hf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ras-Zd-C6Y" secondAttribute="trailing" constant="16" id="eaZ-x5-s2L"/>
+                            <constraint firstItem="FMU-m5-lix" firstAttribute="leading" secondItem="ras-Zd-C6Y" secondAttribute="leading" id="qtB-L5-tmb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="LaResult" destination="FMU-m5-lix" id="Bvj-DA-lUA"/>
+                        <outlet property="TxtCityName" destination="ras-Zd-C6Y" id="AXR-fp-Tuz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.5" y="132.5"/>
+        </scene>
+    </scenes>
+</document>
